@@ -7,13 +7,14 @@ import android.view.View
 import android.view.ViewGroup
 import br.com.zup.recursoshumanos.R
 
-class Cadastro : Fragment() {
+class Salario : Fragment() {
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_cadastro, container, false)
+        return inflater.inflate(R.layout.fragment_salario, container, false)
     }
+
 }

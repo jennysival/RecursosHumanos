@@ -8,4 +8,6 @@
     <string name="hint_horas_trabalhadas">Horas Trabalhadas</string>
     <string name="hint_valor_por_hora">Valor por Hora</string>
     <string name="texto_botao_calcular">Calcular salário</string>
+    <string name="titulo_salario">Salário a receber</string>
+    <string name="descricao_imagem_avatar">ícone de pessoa que simboliza usuário na cor cinza</string>
 </resources>

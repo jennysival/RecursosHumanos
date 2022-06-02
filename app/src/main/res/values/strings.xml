@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">RecursosHumanos</string>
+    <string name="texto_descritivo_app">Esse é o nosso aplicativo de cadastro de funcionaries, aqui vamos cadastrar as informações e calcular o salário de funcionárie</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

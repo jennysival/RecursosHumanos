@@ -4,4 +4,5 @@
     <dimen name="margem_16">16dp</dimen>
     <dimen name="largura_0">0dp</dimen>
     <dimen name="altura_0">0dp</dimen>
+    <dimen name="altura_500">500dp</dimen>
 </resources>

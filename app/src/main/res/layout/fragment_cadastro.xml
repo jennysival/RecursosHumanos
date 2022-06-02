@@ -3,7 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".fragments.Cadastro">
+    tools:context=".fragments.CadastroFragment"
+    android:background="@color/cinza_claro">
 
     <!-- TODO: Update blank fragment layout -->
     <TextView

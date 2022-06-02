@@ -1,15 +1,71 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
+<ScrollView android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".fragments.CadastroFragment"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@color/cinza_claro">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="wrap_content"
+        tools:context=".MainActivity">
 
-</FrameLayout>
+        <TextView
+            android:id="@+id/tv_titulo_cadastro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/titulo_cadastro"
+            android:textSize="@dimen/tamanho_fonte_16"
+            android:textStyle="bold"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_margin="@dimen/margem_16"
+            android:textColor="@color/black" />
+
+        <EditText
+            android:id="@+id/et_nome_sobrenome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margem_20"
+            android:layout_marginHorizontal="@dimen/margem_16"
+            android:layout_marginBottom="@dimen/margem_16"
+            android:hint="@string/hint_nome_sobrenome"
+            app:layout_constraintTop_toBottomOf="@id/tv_titulo_cadastro"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <EditText
+            android:id="@+id/et_horas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margem_16"
+            android:hint="@string/hint_horas_trabalhadas"
+            app:layout_constraintTop_toBottomOf="@id/et_nome_sobrenome"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <EditText
+            android:id="@+id/et_valor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margem_16"
+            android:hint="@string/hint_valor_por_hora"
+            app:layout_constraintTop_toBottomOf="@id/et_horas"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/texto_botao_calcular"
+            android:textAllCaps="true"
+            android:layout_marginTop="@dimen/margem_50"
+            android:layout_marginHorizontal="@dimen/margem_16"
+            android:backgroundTint="@color/laranja_FFB74D"
+            app:layout_constraintTop_toBottomOf="@id/et_valor"
+            />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

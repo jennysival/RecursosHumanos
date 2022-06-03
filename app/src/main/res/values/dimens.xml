@@ -10,4 +10,5 @@
     <dimen name="altura_45">45dp</dimen>
     <dimen name="largura_45">45dp</dimen>
     <dimen name="margem_30">30dp</dimen>
+    <dimen name="altura_400">400dp</dimen>
 </resources>

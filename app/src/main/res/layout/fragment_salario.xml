@@ -42,9 +42,41 @@
             android:layout_marginTop="@dimen/margem_30"
             android:layout_marginHorizontal="@dimen/margem_16"
             android:layout_marginBottom="@dimen/margem_16"
-            android:text="Nome Usuário"
+            android:text="@string/texto_nome_user"
+            android:textColor="@color/black"
             app:layout_constraintStart_toEndOf="@id/iv_avatar"
             app:layout_constraintTop_toBottomOf="@id/tv_titulo_salario"/>
+
+        <TextView
+            android:id="@+id/tv_horas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/texto_horas"
+            android:layout_margin="@dimen/margem_16"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toBottomOf="@id/iv_avatar"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <TextView
+            android:id="@+id/tv_valor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/texto_valor"
+            android:layout_margin="@dimen/margem_16"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toBottomOf="@id/tv_horas"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <TextView
+            android:id="@+id/tv_salario"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/texto_salario"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_margin="@dimen/margem_16"
+            app:layout_constraintTop_toBottomOf="@id/tv_valor"
+            app:layout_constraintStart_toStartOf="parent"/>
 
 
 

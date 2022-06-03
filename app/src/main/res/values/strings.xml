@@ -10,4 +10,8 @@
     <string name="texto_botao_calcular">Calcular salário</string>
     <string name="titulo_salario">Salário a receber</string>
     <string name="descricao_imagem_avatar">ícone de pessoa que simboliza usuário na cor cinza</string>
+    <string name="texto_nome_user">Nome Usuário</string>
+    <string name="texto_horas">Horas trabalhadas: 8h</string>
+    <string name="texto_valor">Valor por hora: R$ 50,00</string>
+    <string name="texto_salario">Salário a receber: R$ 400,00</string>
 </resources>

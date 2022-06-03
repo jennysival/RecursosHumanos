@@ -16,6 +16,7 @@
         android:layout_width="@dimen/largura_0"
         android:layout_height="wrap_content"
         android:text="@string/texto_descritivo_app"
+        android:textColor="@color/black"
         android:layout_marginTop="@dimen/margem_50"
         android:layout_marginHorizontal="@dimen/margem_16"
         app:layout_constraintEnd_toEndOf="parent"

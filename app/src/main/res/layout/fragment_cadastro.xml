@@ -9,7 +9,7 @@
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        tools:context=".MainActivity">
+        tools:context=".home.MainActivity">
 
         <TextView
             android:id="@+id/tv_titulo_cadastro"
@@ -31,6 +31,8 @@
             android:layout_marginHorizontal="@dimen/margem_16"
             android:layout_marginBottom="@dimen/margem_16"
             android:hint="@string/hint_nome_sobrenome"
+            android:importantForAutofill="no"
+            android:inputType="text"
             app:layout_constraintTop_toBottomOf="@id/tv_titulo_cadastro"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"/>
@@ -41,6 +43,8 @@
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/margem_16"
             android:hint="@string/hint_horas_trabalhadas"
+            android:importantForAutofill="no"
+            android:inputType="numberDecimal"
             app:layout_constraintTop_toBottomOf="@id/et_nome_sobrenome"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"/>
@@ -51,11 +55,14 @@
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/margem_16"
             android:hint="@string/hint_valor_por_hora"
+            android:importantForAutofill="no"
+            android:inputType="numberDecimal"
             app:layout_constraintTop_toBottomOf="@id/et_horas"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"/>
 
         <Button
+            android:id="@+id/btn_BotaoCalcular"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/texto_botao_calcular"

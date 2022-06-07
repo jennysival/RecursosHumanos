@@ -1,7 +1,8 @@
-package br.com.zup.recursoshumanos
+package br.com.zup.recursoshumanos.home
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.navigation.fragment.NavHostFragment
 import br.com.zup.recursoshumanos.databinding.ActivityMainBinding
 import br.com.zup.recursoshumanos.fragments.CadastroFragment
 
@@ -14,9 +15,6 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        supportFragmentManager
-            .beginTransaction()
-            .add(binding.container.id, CadastroFragment())
-            .commit()
+        supportFragmentManager.findFragmentById(binding.navHostFragmentContainer.id) as NavHostFragment
     }
 }

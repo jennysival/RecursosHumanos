@@ -9,7 +9,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    tools:context=".MainActivity">
+    tools:context=".home.MainActivity">
 
     <TextView
         android:id="@+id/tv_descricao"
@@ -23,18 +23,21 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/container"
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/nav_host_fragment_container"
+        android:name="androidx.navigation.fragment.NavHostFragment"
         android:layout_width="@dimen/largura_0"
         android:layout_height="@dimen/altura_400"
         android:layout_marginTop="@dimen/margem_50"
         android:layout_marginHorizontal="@dimen/margem_16"
         android:layout_marginBottom="@dimen/margem_16"
+        app:defaultNavHost="true"
+        app:navGraph="@navigation/navigation"
         app:layout_constraintTop_toBottomOf="@id/tv_descricao"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintBottom_toBottomOf="parent">
-    </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.fragment.app.FragmentContainerView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>
